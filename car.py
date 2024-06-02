@@ -7,4 +7,17 @@ class Car(ABC):
 
     @abstractmethod
     def needs_service(self):
-        pass
+        print("Yes it needs service")
+
+
+class otherCar(Car):
+
+    def needs_service(self):
+        print("This is a subclass method!")
+
+
+c = otherCar(12)
+
+c.needs_service()
+
+print("hello")
